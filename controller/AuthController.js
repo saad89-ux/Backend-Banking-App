@@ -23,7 +23,8 @@ export const signupController = async (req, res) => {
       name,
       email,
       password: hashPassword,
-      role,
+      role: role || "customer",
+
       bankId,
     });
 
